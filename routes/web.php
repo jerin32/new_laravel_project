@@ -3,10 +3,11 @@
 use App\Models\User;
 
 use Illuminate\Support\Facades\Route;
-
 Route::get('/', function () {
-    return 'welcome to laravel';
-});
+    //    return 'hello world';
+        return view('home');
+    });
+
 
 Route::get('/greeting', function () {
     return view('greeting');
